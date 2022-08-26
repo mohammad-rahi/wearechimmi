@@ -1,11 +1,86 @@
+/*===== Fonts =====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'GT Super Txt Trial';
+    src: url('../assets/fonts/GT-Super-Text-Regular.woff2');
+}
+
+/*===== Variables =====*/
+:root {
+    /*===== Color =====*/
+    --clr-primary: #B5B35C;
+    --clr-secondary-green: #39FF14;
+    --clr-secondary-red: #FF3131;
+    --clr-secondary-yellow: #FFF01F;
+    --clr-secondary-pink: #FF44CC;
+    --clr-secondary-purple: #BC13FE;
+    --clr-secondary-blue: #1F51FF;
+    --clr-current-olive: #5E6B61;
+    --clr-current-yellow: #F2E085;
+    --clr-current-baby-blue: #BFEAFF;
+    --clr-current-salmon: #FECFBA;
+    --clr-current-mild-olive: #A3A59B;
+    --clr-current-orange: #D77628;
+    --clr-current-black: #000000;
+    --clr-current-light-gray: #F8F8F8;
+    --clr-current-brick-red: #BD6059;
+
+    /*===== Heading =====*/
+    --h1-font: 700 56px/84px 'GT Super Txt Trial', sans-serif;
+    --h2-font: 700 48px/72px 'GT Super Txt Trial', sans-serif;
+    --h3-font: 700 40px/60px 'GT Super Txt Trial', sans-serif;
+    --h4-font: 700 32px/48px 'GT Super Txt Trial', sans-serif;
+    --h5-font: 700 24px/36px 'GT Super Txt Trial', sans-serif;
+    --h6-font: 700 20px/30px 'GT Super Txt Trial', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.section_header {
+    display: grid;
+    place-content: center;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section_header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    /* left: 90px; */
+    right: 80%;
+    width: 267px;
+    height: 18px;
+    background: url('../assets/images/Waves.png') no-repeat center;
+    background-size: 267px 18px;
+}
+
+.section_header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    /* right: 90px; */
+    left: 80%;
+    width: 267px;
+    height: 18px;
+    background: url('../assets/images/Waves.png') no-repeat center;
+    background-size: 267px 18px;
+}
+
+.section_header h3 {
+    font: var(--h3-font);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .about_header {
     background-color: var(--clr-current-brick-red);
     padding: 6rem 0;
-}
-
-.about_header::before,
-.about_header::after {
-    background-image: url('../assets/images/Waves.png');
 }
 
 .about_header h3 {
@@ -34,11 +109,11 @@
     margin: 1.5rem 0;
 }
 
-.about_text p:first-child{
+.about_text p:first-child {
     margin-top: 0;
 }
 
-.about_text p:last-child{
+.about_text p:last-child {
     margin-bottom: 0;
 }
 
@@ -60,13 +135,28 @@
 }
 
 @media screen and (max-width: 992px) {
-    .about_text_wrapper, .about_text{
+
+    .about_text_wrapper,
+    .about_text {
         padding: 3rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .about_text_wrapper, .about_text{
+    .section_header::before {
+        right: 90%;
+    }
+
+    .section_header::after {
+        left: 90%;
+    }
+
+    .about_header h3 {
+        font: var(--h4-font);
+    }
+
+    .about_text_wrapper,
+    .about_text {
         padding: 1.5rem;
     }
 }
