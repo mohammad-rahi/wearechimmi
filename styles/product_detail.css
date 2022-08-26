@@ -1,3 +1,66 @@
+/*===== Fonts =====*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'GT Super Txt Trial';
+    src: url('../assets/fonts/GT-Super-Text-Regular.woff2');
+}
+
+/*===== Variables =====*/
+:root {
+    /*===== Color =====*/
+    --clr-primary: #B5B35C;
+    --clr-secondary-green: #39FF14;
+    --clr-secondary-red: #FF3131;
+    --clr-secondary-yellow: #FFF01F;
+    --clr-secondary-pink: #FF44CC;
+    --clr-secondary-purple: #BC13FE;
+    --clr-secondary-blue: #1F51FF;
+    --clr-current-olive: #5E6B61;
+    --clr-current-yellow: #F2E085;
+    --clr-current-baby-blue: #BFEAFF;
+    --clr-current-salmon: #FECFBA;
+    --clr-current-mild-olive: #A3A59B;
+    --clr-current-orange: #D77628;
+    --clr-current-black: #000000;
+    --clr-current-light-gray: #F8F8F8;
+    --clr-current-brick-red: #BD6059;
+
+    /*===== Heading =====*/
+    --h1-font: 700 56px/84px 'GT Super Txt Trial', sans-serif;
+    --h2-font: 700 48px/72px 'GT Super Txt Trial', sans-serif;
+    --h3-font: 700 40px/60px 'GT Super Txt Trial', sans-serif;
+    --h4-font: 700 32px/48px 'GT Super Txt Trial', sans-serif;
+    --h5-font: 700 24px/36px 'GT Super Txt Trial', sans-serif;
+    --h6-font: 700 20px/30px 'GT Super Txt Trial', sans-serif;
+
+    /*===== Display =====*/
+    --display-1: 700 96px/111px 'GT Super Txt Trial', sans-serif;
+    --display-2: 700 80px/93px 'GT Super Txt Trial', sans-serif;
+    --display-3: 700 72px/83px 'GT Super Txt Trial', sans-serif;
+
+    /*===== Body Text =====*/
+    --text-large-bold: 700 20px/30px 'Montserrat', sans-serif;
+    --text-large: 400 20px/30px 'Montserrat', sans-serif;
+    --text-normal-bold: 700 16px/24px 'Montserrat', sans-serif;
+    --text-normal: 400 16px/24px 'Montserrat', sans-serif;
+    --clr-text: #23262F;
+
+    /*===== Caption =====*/
+    --caption-1: 400 14px/22px 'Montserrat', sans-serif;
+    --caption-1-bold: 700 14px/22px 'Montserrat', sans-serif;
+    --caption-2: 400 12px/18px 'Montserrat', sans-serif;
+    --caption-2-bold: 700 12px/28px 'Montserrat', sans-serif;
+
+    /*===== Others =====*/
+    --header-height: 140px;
+    --navbar-height: 100px;
+    --z-fixed: 100;
+    --z-toltip: 10;
+    --z-back: -1;
+    --transition: all .2s linear;
+}
+
 /*===== Product Detail =====*/
 .product_detail_wrapper {
     padding: 4rem 2rem;
@@ -163,7 +226,7 @@
     font-size: 32px;
 }
 
-.product_detail_image_controller{
+.product_detail_image_controller {
     display: none;
 }
 
@@ -210,18 +273,18 @@
         font-size: 24px;
     }
 
-    .product_detail_left{
+    .product_detail_left {
         flex-direction: column;
         align-items: center;
     }
 
-    .product_detail_image_controller{
+    .product_detail_image_controller {
         display: flex;
         align-items: center;
         gap: .5rem;
     }
 
-    .product_detail_image_controller div{
+    .product_detail_image_controller div {
         width: 10px;
         height: 10px;
         background-color: #efefef;

@@ -33,6 +33,18 @@
     --h4-font: 700 32px/48px 'GT Super Txt Trial', sans-serif;
     --h5-font: 700 24px/36px 'GT Super Txt Trial', sans-serif;
     --h6-font: 700 20px/30px 'GT Super Txt Trial', sans-serif;
+
+    /*===== Display =====*/
+    --display-1: 700 96px/111px 'GT Super Txt Trial', sans-serif;
+    --display-2: 700 80px/93px 'GT Super Txt Trial', sans-serif;
+    --display-3: 700 72px/83px 'GT Super Txt Trial', sans-serif;
+
+    /*===== Body Text =====*/
+    --text-large-bold: 700 20px/30px 'Montserrat', sans-serif;
+    --text-large: 400 20px/30px 'Montserrat', sans-serif;
+    --text-normal-bold: 700 16px/24px 'Montserrat', sans-serif;
+    --text-normal: 400 16px/24px 'Montserrat', sans-serif;
+    --clr-text: #23262F;
 }
 
 ul {
