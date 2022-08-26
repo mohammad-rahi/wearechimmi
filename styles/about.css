@@ -1,0 +1,72 @@
+.about_header {
+    background-color: var(--clr-current-brick-red);
+    padding: 6rem 0;
+}
+
+.about_header::before,
+.about_header::after {
+    background-image: url('../assets/images/Waves.png');
+}
+
+.about_header h3 {
+    color: var(--clr-current-light-gray);
+    font: var(--display-3) !important;
+}
+
+.about_text_wrapper {
+    background-color: var(--clr-current-yellow);
+    padding: 5rem 6rem;
+    padding-bottom: 12rem;
+}
+
+.about_text {
+    background-color: var(--clr-current-light-gray);
+    color: var(--clr-current-black);
+    padding: 4rem;
+    border-radius: 90px;
+    text-align: center;
+    font: var(--text-large);
+    border: 1px solid var(--clr-current-black);
+    position: relative;
+}
+
+.about_text p {
+    margin: 1.5rem 0;
+}
+
+.about_text p:first-child{
+    margin-top: 0;
+}
+
+.about_text p:last-child{
+    margin-bottom: 0;
+}
+
+.about_text::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-current-orange);
+    border: 1px solid var(--clr-current-black);
+    border-radius: 90px;
+    z-index: -1;
+}
+
+.color_primary {
+    color: var(--clr-primary);
+}
+
+@media screen and (max-width: 992px) {
+    .about_text_wrapper, .about_text{
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_text_wrapper, .about_text{
+        padding: 1.5rem;
+    }
+}

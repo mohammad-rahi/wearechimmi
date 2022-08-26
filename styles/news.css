@@ -1,0 +1,133 @@
+.news_header {
+    background-color: var(--clr-current-yellow);
+    padding: 6rem 0;
+}
+
+.news_header::before,
+.news_header::after {
+    background-image: url('../assets/images/Waves_orange.png');
+}
+
+.news_header h3 {
+    color: var(--clr-current-black);
+    font: var(--display-3) !important;
+}
+
+.news_wrapper {
+    padding: 6rem 2rem;
+    padding-bottom: 12rem;
+}
+
+.news_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    place-items: center;
+}
+
+.news_card {
+    width: 424px;
+    height: 583px;
+    border: 1px solid var(--clr-current-black);
+    position: relative;
+    background-color: var(--clr-current-light-gray);
+}
+
+.news_card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-current-olive);
+    border: 1px solid var(--clr-current-black);
+    z-index: -1;
+}
+
+.news_card:hover::after {
+    top: 12px;
+    left: 12px;
+    transition: var(--transition);
+}
+
+.news_image {
+    width: 100%;
+    height: 262px;
+    background: #efefef no-repeat center;
+    background-image: url('../assets/images/news_sample1.png');
+    position: relative;
+}
+
+.news_category {
+    background-color: var(--clr-current-light-gray);
+    display: inline;
+    padding: 8px 16px;
+    border: 2px solid var(--clr-current-black);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.news_category a {
+    color: var(--clr-current-black);
+}
+
+.news_description {
+    padding: 1.5rem;
+}
+
+.news_description h4 {
+    font: var(--h4-font);
+    margin: .5rem 0;
+}
+
+.news_date {
+    font: var(--caption-1-bold);
+}
+
+.news_desc {
+    font: var(--text-large);
+    margin-bottom: 1rem;
+}
+
+.news_description a {
+    color: var(--clr-current-black);
+    font: 700 16px/24px 'GT Super Txt Trial', sans-serif;
+    position: relative;
+}
+
+.news_description a::before {
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: calc(100% + 20px);
+    height: 2px;
+    background-color: var(--clr-current-black);
+}
+
+.news_description a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: #efefef no-repeat cover/center;
+    background-image: url('../assets/icons/Arrow.png');
+    background-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    .news_grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news_grid {
+        grid-template-columns: auto;
+    }
+}

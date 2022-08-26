@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are Chimmi</title>
+
+    <!--===== Fontawesome 5 =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--===== Styles =====-->
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+    <!--===== Header =====-->
+    <header class="navbar_header">
+        <!--===== Marquee =====-->
+        <marquee class="marquee_top" behavior="" direction="">
+            <ul class="marquee_list">
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+            </ul>
+        </marquee>
+
+        <!--===== Navbar =====-->
+        <nav class="navbar">
+            <div class="navbar_left">
+                <a href="" class="navbar_logo"><img src="./assets/images/Logo.svg" alt="Logo" /></a>
+                <div class="search_wrapper">
+                    <div class="navbar_search">
+                        <input type="text" placeholder="What can we help you find?" />
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="navbar_menu">
+                <li><a href="#">Home</a></li>
+                <li class="navbar_sub">
+                    <a href="#">Shop <img src="./assets/icons/Caret_icon.svg" /></a>
+                    <div class="navbar_sub_menu">
+                        <ul>
+                            <li><a href="#">Shop All</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">NY Forever x WE ARE CHIMMI</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Giftables</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Phone Accessories</a></li>
+                            <li><a href="#">Hair Claws</a></li>
+                            <li><a href="#">Hair Ties</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Headbands</a></li>
+                            <li><a href="#">Hair Clips</a></li>
+                            <li><a href="#">Hair Pins</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="#">Stories</a></li>
+                <li class="navbar_icons">
+                    <a href="#"><img src="./assets/icons/User_icon.svg" /></a>
+                    <a href="#"><img src="./assets/icons/Cart_icon.svg" /></a>
+                </li>
+            </ul>
+
+            <div onclick="toggoleMenu(this)" class="menu_icon">
+                <img src="./assets/images/Bars.png" />
+            </div>
+        </nav>
+    </header>
+
+    <!--===== Hero section =====-->
+    <section class="hero">
+
+        <!--===== Newsletter Popup =====-->
+        <div class="newsletter_popup_overlay" id="newsletter_popup_overlay">
+            <div class="newsletter_popup">
+                <div class="newsletter_popup_header">
+                    <button class="newsletter_popup_close" onclick="closeNewsletterModal()"></button>
+                    <div class="newsletter_popup_images">
+                        <img src="./assets/images/Group 8.png" class="newsletter_image1">
+                        <img src="./assets/images/Group 9.png" class="newsletter_image2">
+                        <img src="./assets/images/Group 10.png" class="newsletter_image3">
+                        <img src="./assets/images/Group 12.png" class="newsletter_image4">
+                    </div>
+                </div>
+                <div class="newsletter_popup_body">
+                    <p>Join the WE ARE CHIMMI newsletter to be the first to know about new products, the organizations
+                        we support, and more.</p>
+                    <form>
+                        <input type="text" placeholder="Your email" />
+                        <button></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero_wrapper">
+            <div class="hero_left">
+                <img src="./assets/images/Hero_image.jpg" alt="Hero image" />
+            </div>
+            <div class="hero_right">
+                <img src="./assets/images/Heavy_waves.svg" alt="Heavy waves">
+                <div class="hero_text">
+                    <h1>LOUD & PROUD</h1>
+                    <p>We Are Children of Immigrats</p>
+                </div>
+                <a class="hero_shop_button" href="#">Shop Now</a>
+            </div>
+    </section>
+
+    <!--===== Join  The Hustle =====-->
+    <seciton class="join_the_hustle">
+        <div class="join_the_hustle_wrapper">
+            <div class="join_the_hustle_left">
+                <img src="./assets/images/Join_the_hustle_right.svg" alt="">
+            </div>
+            <div class="join_the_hustle_right">
+                <h3>JOIN THE HUSTLE.</h3>
+                <p>WE ARE CHIMMI, short for 'Children of Immigrants,' is inspired by our backgrounds. We are an
+                    accessories brand that donates 10% of profits from sales to organizations that support immigrant and
+                    marginalized communities. Learn more about us</p>
+                <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </seciton>
+
+    <!--===== New Arrivals =====-->
+    <section class="arrivals section">
+        <div class="section_header">
+            <h3>NEW ARRIVALS</h3>
+        </div>
+
+        <div class="slider">
+            <div class="card">
+                <div class="card_image card_image1"></div>
+                <h5>STUDIO JUNGIN INCENSE PLATE</h5>
+                <p>$56.00</p>
+            </div>
+            <div class="card">
+                <div class="card_image card_image2"></div>
+                <h5>STUDIO JUNGIN SMALL INCENSE HOLDER</h5>
+                <p>$30.00</p>
+            </div>
+            <div class="card">
+                <div class="card_image card_image3"></div>
+                <h5>BRAIDED HEADBAND</h5>
+                <p>$30.00</p>
+            </div>
+        </div>
+
+        <div class="slider_controllers">
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!--===== T-Shirts =====-->
+    <section class="t-shirts">
+        <!--===== Marquee =====-->
+        <marquee class="marquee_tshirts" behavior="" direction="">
+            <ul class="marquee_list">
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+                <li>
+                    <img src="./assets/icons/Smile_icon.svg" />
+                    <p>FREE US SHIPPING ON ORDERS OVER $100</p>
+                </li>
+            </ul>
+        </marquee>
+
+        <div class="section">
+            <div class="section_header">
+                <h3>T-SHIRTS</h3>
+            </div>
+
+            <div class="slider">
+                <div class="card t-shirt_card">
+                    <div class="card_image t-shirt_image1"></div>
+                    <h5>NY FOREVER X WE ARE CHIMMI T-SHIRT</h5>
+                    <p>$42.00</p>
+                </div>
+                <div class="card t-shirt_card">
+                    <div class="card_image t-shirt_image2"></div>
+                    <h5>CHILDREN OF IMMIGRANTS T-SHIRT - SAND</h5>
+                    <p>$28.00</p>
+                </div>
+                <div class="card t-shirt_card">
+                    <div class="card_image t-shirt_image3"></div>
+                    <h5>CHILDREN OF IMMIGRANTS T-SHIRT - OLIVE</h5>
+                    <p>$28.00</p>
+                </div>
+            </div>
+
+            <div class="slider_controllers">
+                <button><i class="fas fa-arrow-left"></i></button>
+                <button><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Hair Claws =====-->
+    <section class="section hair">
+        <div class="section_header">
+            <h3>HAIR CLAWS</h3>
+        </div>
+
+        <div class="slider">
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image1"></div>
+                <h5>BUTTERFLY SPLATTER CLAW</h5>
+                <p>$14.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image2"></div>
+                <h5>BEAR LOVE CLAW SET</h5>
+                <p>$10.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image3"></div>
+                <h5>MELLOW MICRO CLAW SET</h5>
+                <p>$5.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image4"></div>
+                <h5>JUMBO RECTANGLE MATTE CLAW</h5>
+                <p>$16.00</p>
+            </div>
+        </div>
+
+        <div class="slider_controllers">
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!--===== JEWELRY =====-->
+    <section class="section jewelry">
+        <div class="section_header">
+            <h3>JEWELRY</h3>
+        </div>
+
+        <div class="slider">
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image1 jewelry_image1"></div>
+                <h5>EYE BEADED NECKLACE SET</h5>
+                <p>$38.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image2 jewelry_image2"></div>
+                <h5>DAISY EARRINGS</h5>
+                <p>$20.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image3  jewelry_image3"></div>
+                <h5>SOPHIE FAUX PEARL NECKLACE</h5>
+                <p>$25.00</p>
+            </div>
+            <div class="card hair_claws_card">
+                <div class="card_image hair_claws_image4  jewelry_image4"></div>
+                <h5>TWO TONE BEADED NECKLACE</h5>
+                <p>$35.00</p>
+            </div>
+        </div>
+
+        <div class="slider_controllers">
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!--===== Newsletter =====-->
+    <section class="newsletter">
+        <div class="newsletter_form">
+            <h1>JOIN OUR NEWSLETTER</h1>
+            <form>
+                <input type="text" placeholder="Your email" />
+                <button><i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!--===== Footer =====-->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_left">
+                <a href="" class="footer_logo"><img src="./assets/images/Logo.png" alt="Logo" /></a>
+                <div class="social_media">
+                    <a href="#"><img src="./assets/icons/YoutubeLogo.svg" alt="YoutubeLogo"></a>
+                    <a href="#"><img src="./assets/icons/InstagramLogo.svg" alt="InstagramLogo"></a>
+                    <a href="#"><img src="./assets/icons/TwitterLogo.svg" alt="TwitterLogo"></a>
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="quick_links">
+                    <h6>QUICK LINKS</h6>
+                    <ul>
+                        <li><a href="./pages/about.html">About Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h6>CONTACT US</h6>
+                    <ul>
+                        <li>9177082232</li>
+                        <li>hello@wearechimmi.com</li>
+                        <li>PO Box 25003</li>
+                        <li>Brooklyn, NY 11202-5003 United States</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© 2022 WE ARE CHIMMI</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            const script = document.createElement('script');
+            script.setAttribute('src', './index.js');
+
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+
+</html>
